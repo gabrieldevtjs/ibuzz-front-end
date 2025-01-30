@@ -4,13 +4,13 @@ import Image from 'next/image';
 export default function Login(){
     return (
         <>
-        <div className="w-full px-3 flex flex-col lg:flex-row min-h-screen">
-            <div className='w-full flex  flex-col items-center justify-center lg:px-6 gap-16 lg:w-1/3'>
+        <div className="w-full px-3 flex flex-col lg:flex-row min-h-screen font-roboto">
+            <div className='w-full h-screen flex  flex-col justify-center items-center lg:px-6 gap-16 lg:w-1/3'>
     
 
             <div className="w-full flex flex-col ">
                 <div className="w-full flex justify-center mb-12">
-                    <h1 className="text-4xl font-bold font-roboto text-[#393636]">Ibuzz</h1>
+                    <h1 className="text-4xl font-bold font-roboto text-[#393636]">Sign In</h1>
                 </div>
 
             <div className="flex flex-col gap-6">
@@ -63,7 +63,7 @@ export default function Login(){
             <h1 className='text-white text-4xl font-bold '>Bem Vindo De Volta!</h1>
             
           
-            <p className='text-white mt-2  text-center px-60'>Agradecemos por estar conosco. Todos os produtos e serviços da Ibuzz estão à sua disposição."</p>
+            <p className='text-white mt-2  text-center px-60'>Agradecemos por estar conosco. Todos os produtos e serviços da Ibuzz estão à sua disposição.</p>
 
             <button className='border-2 px-10 py-2 text-white rounded-lg mt-6'>Sign Out</button>
             </div>
