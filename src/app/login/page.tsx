@@ -5,7 +5,7 @@ export default function Login(){
     return (
         <>
         <div className="w-full px-3 flex flex-col lg:flex-row min-h-screen">
-            <div className='w-full flex  flex-col items-center border-2 lg:px-6 gap-40 lg:w-1/3'>
+            <div className='w-full flex  flex-col items-center border-2 lg:px-6 gap-16 lg:w-1/3'>
             
             <div className="w-full px-2 text-2xl">
                 <h1 className="font-semibold  text-[#393636]">Ibuzz</h1>
