@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Login(){
     return (
         <>
-        <div className="w-full px-3 flex flex-col lg:flex-row h-screen">
+        <div className="w-full px-3 flex flex-col lg:flex-row min-h-screen">
             <div className='w-full flex  flex-col items-center border-2 lg:px-6 gap-40 lg:w-1/3'>
             
             <div className="w-full px-2 text-2xl">
@@ -55,7 +55,7 @@ export default function Login(){
         </div>
             </div>
 
-            <div className='hidden lg:flex w-2/3  flex-col bg-black justify-center 
+            <div className='hidden h-screen lg:flex w-2/3  flex-col bg-black justify-center 
             items-center'>
             <h1 className='text-white text-4xl font-bold border-2'>Bem Vindo De Volta!</h1>
             
