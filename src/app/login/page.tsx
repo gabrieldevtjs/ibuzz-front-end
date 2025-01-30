@@ -5,14 +5,14 @@ export default function Login(){
     return (
         <>
         <div className="w-full px-3 flex flex-col lg:flex-row h-screen">
-            <div className='w-full flex lg:w-1/2 flex-col items-center lg:px-6'>
+            <div className='w-full flex  flex-col items-center border-2 lg:px-6 gap-40 lg:w-1/3'>
             
-            <div className="w-full px-2 my-6 text-2xl">
+            <div className="w-full px-2 text-2xl">
                 <h1 className="font-semibold  text-[#393636]">Ibuzz</h1>
             </div>
 
 
-            <div className="w-full  mt-52 flex flex-col ">
+            <div className="w-full flex flex-col border-2">
                 <div className="w-full flex justify-center mb-12">
                     <h1 className="text-4xl font-bold font-roboto text-[#393636]">Sign In</h1>
                 </div>
@@ -55,18 +55,16 @@ export default function Login(){
         </div>
             </div>
 
-            <div className='hidden lg:flex flex-col bg-black justify-center 
-            items-center px-52'>
-            <h1 className='text-white text-4xl font-bold'>Bem Vindo De Volta!</h1>
+            <div className='hidden lg:flex w-2/3  flex-col bg-black justify-center 
+            items-center'>
+            <h1 className='text-white text-4xl font-bold border-2'>Bem Vindo De Volta!</h1>
             
           
-            <p className='text-white mt-2 px-32  text-center'>Agradecemos por estar conosco. Todos os produtos e serviços da Ibuzz estão à sua disposição."</p>
+            <p className='text-white mt-2  text-center border-2 px-60'>Agradecemos por estar conosco. Todos os produtos e serviços da Ibuzz estão à sua disposição."</p>
 
             <button className='border-2 px-10 py-2 text-white rounded-lg mt-6'>Sign Out</button>
             </div>
-
         </div>
-
-        </>
+    </>
     )
 }
