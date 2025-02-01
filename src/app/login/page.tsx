@@ -9,9 +9,18 @@ export default function Login(){
     <div className='h-full w-full flex flex-col px-6 py-4 lg:w-1/3'>
         
         {/* Título principal */}
-        <div className='text-2xl font-semibold text-[#393636]'>
-            Ibuzz
-        </div>
+                  <div className="flex gap-2 items-center">
+                      <Image 
+                        src="/icons/iconapple.png" 
+                        width={18} 
+                        height={20} 
+                        alt="icon apple" 
+                        className="object-contain"
+                        quality={100}
+                        priority
+                      />
+                      <h1 className="text-xl text-[#393636]">Ibuzz</h1>
+                    </div>
         
         {/* Contêiner que vai ocupar o espaço restante */}
         <div className='flex flex-col flex-1 justify-center items-center'>
@@ -33,7 +42,7 @@ export default function Login(){
                             <Image src="/icons/carta.png" alt="Email" width={25} height={40} className='w-[20px] h-[20px]' />
                             <h1 className="px-2 text-lg text-[#393636]">Email</h1>
                         </div>
-                        <input type="text" placeholder="Enter Username" className="border-2 rounded-lg py-2 px-2" />
+                        <input type="text" placeholder="Enter Username" className="border-2 rounded-lg py-2 px-2"/>
                     </div>
 
                     {/* Campo de Senha */}
