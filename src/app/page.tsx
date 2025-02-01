@@ -35,7 +35,7 @@ export default function Home() {
           </div>
 
           {/* Seção do iPhone 16 */}
-          <div className="mt-28 flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-28 lg:justify-center">
+          <div className=" flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-28 lg:justify-center h-screen justify-center">
             {/* Container principal com gradiente circular */}
             <div className="relative w-full max-w-[250px] h-[400px] group">
               {/* Efeito de brilho circular */}
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
 
           {/* Seção de diversas cores para o iPhone */}
-          <div className="mt-44 flex flex-col items-center">
+          <div className="h-screen flex flex-col items-center">
             <div className="mb-2">
               <span className="text-2xl font-bold text-[#393636]">Diversas Cores</span>
             </div>
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
 
           {/* Seção do MacBook Air M4 */}
-          <div className="mt-48 flex flex-col items-center">
+          <div className="h-screen flex flex-col items-center">
           <h2 className="text-2xl font-bold text-[#393636] text-center">Inovação Sem Limites, Explore o Novo MacBook!</h2>
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <div className="relative w-full max-w-[400px] h-[500px] lg:w-[700px]">
