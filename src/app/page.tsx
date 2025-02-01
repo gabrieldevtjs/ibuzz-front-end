@@ -35,7 +35,7 @@ export default function Home() {
           </div>
 
           {/* Seção do iPhone 16 */}
-          <div className=" flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-28 lg:justify-center h-screen justify-center">
+          <div className="h-screen justify-center flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-28 lg:justify-center xl:">
             {/* Container principal com gradiente circular */}
             <div className="relative w-full max-w-[250px] h-[400px] group">
               {/* Efeito de brilho circular */}
@@ -70,11 +70,11 @@ export default function Home() {
           </div>
 
           {/* Seção de diversas cores para o iPhone */}
-          <div className="h-screen flex flex-col items-center">
+          <div className="flex flex-col items-center h-screen justify-center">
             <div className="mb-2">
-              <span className="text-2xl font-bold text-[#393636]">Diversas Cores</span>
+              <span className="text-2xl font-bold text-[#393636] lg:text-3xl">Diversas Cores</span>
             </div>
-            <p className="text-center">Customize sua experiência com o iPhone 16 na cor perfeita para você!</p>
+            <p className="text-center lg:text-lg">Customize sua experiência com o iPhone 16 na cor perfeita para você!</p>
             <div className="relative w-full max-w-[300px] h-[300px] flex justify-start">
               <Image 
                 src="/images/coloriphone.png" 
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
 
           {/* Seção do MacBook Air M4 */}
-          <div className="h-screen flex flex-col items-center">
+          <div className="flex flex-col items-center h-screen justify-center">
           <h2 className="text-2xl font-bold text-[#393636] text-center">Inovação Sem Limites, Explore o Novo MacBook!</h2>
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <div className="relative w-full max-w-[400px] h-[500px] lg:w-[700px]">
@@ -104,7 +104,7 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-semibold">MacBook Air M4</h3>
             </div>
-            <p className="text-[#393636] text-center mt-2 max-w-xl sm:px-14 lg:px-10">O MacBook Air M4 é o mais recente lançamento da Apple, com tela Retina de 13,6", chip M4 e desempenho sem precedentes.</p>
+            <p className="text-[#393636] text-center mt-2 max-w-xl sm:px-14 lg:px-12">O MacBook Air M4 é o mais recente lançamento da Apple, com tela Retina de 13,6", chip M4 e desempenho sem precedentes.</p>
             <button className="px-5 py-3 rounded-lg mt-6 bg-blue-700 text-white text-xs">SAIBA MAIS</button>
           </div>
           </div>
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
 
         {/* Seção do Apple Watch */}
-        <div className="bg-black mt-20 rounded-2xl flex flex-col items-center z-10 pb-12 xl:flex-row xl:px-80">
+        <div className="bg-black mt-20 rounded-2xl flex flex-col items-center z-10 pb-12 xl:flex-row xl:px-80 h-screen justify-center">
           <div className="flex flex-col items-center xl:items-start  2xl:px-16">
           <div className="mt-16">
             <h1 className="text-white  text-xl">O Poder do Apple <span className="text-[#4D5060] font-semibold">Watch</span></h1>
@@ -155,7 +155,7 @@ export default function Home() {
 
         {/* Seção de modelos e personalizações para Apple Watch */}
         <div className="px-6">
-          <div className="flex flex-col justify-center items-center mt-44 ">
+          <div className="flex flex-col justify-center items-center mt-44 h-screen ">
             <div className="mb-2">
               <span className="text-2xl font-bold text-[#393636]">Diversos <span className="text-[#AFC50E]">Modelos</span></span>
             </div>
@@ -175,7 +175,7 @@ export default function Home() {
           </div>
 
           {/* Seção do iPad Pro */}
-          <div className="mt-28 flex flex-col items-center">
+          <div className="mt-28 flex flex-col items-center h-screen justify-center">
             <div>
               <h2 className="text-2xl font-bold text-[#393636] text-center">Explore o Novo iPad <span className="text-[#F33D7E]">Pro</span></h2>
             </div>
