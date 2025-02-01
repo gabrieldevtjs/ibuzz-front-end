@@ -169,7 +169,7 @@ export default function Home() {
           {/* Seção do iPad Pro */}
           <div className="mt-28 flex flex-col items-center">
             <div>
-              <h2 className="text-2xl font-bold text-[#393636] text-center">Explore o Novo iPad <span className="text-[#F33D7E]">Pro</span></h2>
+              <h2 className="text-2xl font-bold text-[#393636] text-center">Explore o Novo Pad <span className="text-[#F33D7E]">Pro</span></h2>
             </div>
             <div className="flex flex-col items-center xl:flex-row xl:gap-44">
             <div className="relative w-full max-w-[400px] h-[380px]">
