@@ -35,7 +35,7 @@ export default function Home() {
           </div>
 
           {/* Seção do iPhone 16 */}
-          <div className="flex flex-col h-screen items-center gap-2 lg:flex-row-reverse lg:gap-28 lg:justify-center">
+          <div className="flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-28 lg:justify-center">
             {/* Container principal com gradiente circular */}
             <div className="relative w-full max-w-[250px] h-[400px] group">
              
@@ -65,7 +65,7 @@ export default function Home() {
           </div>
 
           {/* Seção de diversas cores para o iPhone */}
-          <div className=" flex flex-col items-center">
+          <div className="mt-44 flex flex-col items-center">
             <div className="mb-2">
               <span className="text-2xl font-bold text-[#393636]">Diversas Cores</span>
             </div>
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
 
           {/* Seção do MacBook Air M4 */}
-          <div className="h-screen justify-center flex flex-col items-center">
+          <div className="mt-48 flex flex-col items-center">
           <h2 className="text-2xl font-bold text-[#393636] text-center">Inovação Sem Limites, Explore o Novo MacBook!</h2>
             <div className="relative w-full max-w-[400px] h-[350px]">
             
@@ -103,12 +103,13 @@ export default function Home() {
         </div>
 
         {/* Seção do Apple Watch */}
-        <div className="bg-black h-screen justify-center rounded-2xl flex flex-col items-center z-10 pb-12 xl:flex-row xl:px-80">
+        <div className="bg-black mt-32 rounded-2xl flex flex-col items-center z-10 pb-12 xl:flex-row xl:px-80">
+          
           <div className="flex flex-col items-center xl:items-start  2xl:px-16">
           <div className="mt-16">
             <h1 className="text-white  text-xl">O Poder do Apple <span className="text-[#4D5060] font-semibold">Watch</span></h1>
           </div>
-          <div className="relative w-full max-w-[400px] h-[500px] mt-6 xl:hidden">
+          <div className="relative w-full max-w-[400px] h-[280px] mt-6 xl:hidden">
             <Image 
               src="/images/watchnv.png" 
               alt="apple-watch" 
@@ -146,7 +147,7 @@ export default function Home() {
 
         {/* Seção de modelos e personalizações para Apple Watch */}
         <div className="px-6">
-          <div className="flex h-screen flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center mt-44 ">
             <div className="mb-2">
               <span className="text-2xl font-bold text-[#393636]">Diversos <span className="text-[#AFC50E]">Modelos</span></span>
             </div>
@@ -166,12 +167,12 @@ export default function Home() {
           </div>
 
           {/* Seção do iPad Pro */}
-          <div className="h-screen justify-centerflex flex-col items-center">
+          <div className="mt-28 flex flex-col items-center">
             <div>
               <h2 className="text-2xl font-bold text-[#393636] text-center">Explore o Novo iPad <span className="text-[#F33D7E]">Pro</span></h2>
             </div>
             <div className="flex flex-col items-center xl:flex-row xl:gap-44">
-            <div className="relative w-full max-w-[400px] h-[500px]">
+            <div className="relative w-full max-w-[400px] h-[380px]">
               <Image 
                 src="/images/ipadrosa.png" 
                 alt="ipad" 
