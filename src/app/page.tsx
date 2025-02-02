@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Função para alternar o estado do menu (aberto ou fechado)
+  // Function to toggle menu state (open or closed)
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <div className="min-h-screen w-full font-roboto">
         <div className="px-6">
-          {/* Cabeçalho com logo e botão de menu */}
+          {/* Header with logo and menu button */}
           <div className="flex justify-between items-center pt-6">
             <div className="flex gap-2 items-center">
               <Image
@@ -28,7 +28,7 @@ export default function Home() {
               />
               <h1 className="text-xl text-[#393636]">Ibuzz</h1>
             </div>
-            {/* Botão de menu (hamburguer) */}
+            {/* Menu button (hamburger) */}
             <button
               onClick={toggleMenu}
               className="text-2xl lg:hidden"
@@ -64,7 +64,7 @@ export default function Home() {
                 <div>
                   <Image
                     src={"/icons/carrinho.png"}
-                    alt="carrinho-home"
+                    alt="shopping-cart"
                     width={17}
                     height={20}
                   />
@@ -72,7 +72,7 @@ export default function Home() {
                 <div>
                   <Image
                     src={"/icons/user.png"}
-                    alt="carrinho-home"
+                    alt="user-icon"
                     width={15}
                     height={20}
                   />
@@ -81,14 +81,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Seção do iPhone 16 */}
-          <div className="flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-32 lg:justify-center">
-            {/* Container principal com gradiente circular */}
+          {/* iPhone 16 Section */}
+          <div className="flex flex-col items-center gap-2 sm:mt-20 lg:flex-row-reverse lg:gap-32 lg:justify-center lg:mt-36">
+            {/* Main container with circular gradient */}
             <div className="relative w-full max-w-[250px] h-[400px] group">
               <div className="relative w-full h-full transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
                   src="/images/iphoneazulnv.avif"
-                  alt="iphone-azul"
+                  alt="blue-iphone"
                   fill
                   className="object-contain drop-shadow-2xl filter hover:brightness-110 transition-all duration-300"
                   quality={100}
@@ -98,38 +98,40 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center lg:items-start">
               <span className="font-semibold text-xl text-[#393636]">
-                Iphone 16
+                iPhone 16
               </span>
               <p className="text-gray-600 text-center max-w-sm lg:text-start">
-                O iPhone 16 é o último lançamento da Apple, com tela OLED de
-                6,1", chip A18 Bionic e câmera de 48 MP.
+                The iPhone 16 is Apple's latest release, featuring a 6.1" OLED display,
+                A18 Bionic chip, and a 48 MP camera.
               </p>
               <div className="py-2 flex flex-col items-center gap-3">
                 <span className="text-gray-700 text-xs font-bold">
-                  A Partir De R$ 6.599
+                  Starting From $1,299
                 </span>
                 <button className="px-6 py-2 text-white bg-blue-700 rounded-lg text-xs hover:bg-blue-800 transition-colors duration-300">
-                  SAIBA MAIS
+                  LEARN MORE
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Seção de diversas cores para o iPhone */}
+          {/* iPhone Color Options Section */}
           <div className="mt-44 flex flex-col items-center">
+            <div className="flex flex-col items-center">
             <div className="mb-2">
               <span className="text-2xl font-bold text-[#393636]">
-                Diversas <span className="text-teal-600">Cores</span>
+                Various <span className="text-blue-600">Colors</span>
               </span>
             </div>
+            
             <p className="text-center max-w-lg lg:px-16 text-[#393636]">
-              Customize sua experiência com o iPhone 16 na cor perfeita para
-              você!
+              Customize your experience with the iPhone 16 in the perfect color for you!
             </p>
-            <div className="relative w-full max-w-[300px] h-[270px] flex justify-start">
+            </div>
+            <div className="relative w-full max-w-[300px] h-[270px] flex justify-start lg:h-[300px]">
               <Image
                 src="/images/coloriphone.png"
-                alt="iphone-cores"
+                alt="iphone-colors"
                 fill
                 className="object-contain"
                 quality={100}
@@ -137,13 +139,13 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Seção do MacBook Air M4 */}
+          {/* MacBook Air M4 Section */}
           <div className="mt-44 flex flex-col items-center">
             <h2 className="text-2xl font-bold text-[#393636] text-center mb-16">
-              Inovação Sem Limites, Explore o Novo <span className="text-blue-800">MacBook!</span>
+              Limitless Innovation, Explore the New <span className="text-blue-600">MacBook!</span>
             </h2>
-            <div className="flex flex-col gap-6 items-center w-full lg:flex-row lg:px-8">
-              <div className="relative w-full lg:w-1/2">
+            <div className="flex flex-col gap-6 items-center sm:items-center w-full lg:flex-row">
+              <div className=" w-full flex items-center justify-center lg:w-1/2 lg:ml-12 ">
                 <Image
                   src="/images/mackbooknv.png"
                   alt="macbook"
@@ -153,31 +155,31 @@ export default function Home() {
                   height={350}
                 />
               </div>
-              <div className="lg:w-1/2 flex flex-col items-center">
+              <div className="lg:w-1/2 flex flex-col items-center lg:mr-12">
                 <div>
-                  <h3 className="text-xl font-semibold  text-[#393636]">MacBook Air M4</h3>
+                  <h3 className="text-xl font-semibold text-[#393636]">MacBook Air M4</h3>
                 </div>
                 <p className="text-[#393636] text-center mt-2 max-w-xl sm:px-14">
-                  O MacBook Air M4 é o mais recente lançamento da Apple, com
-                  tela Retina de 13,6", chip M4 e desempenho sem precedentes.
+                  The MacBook Air M4 is Apple's latest release, featuring a 13.6" Retina display,
+                  M4 chip, and unprecedented performance.
                 </p>
                 <button className="px-5 py-3 rounded-lg mt-6 bg-blue-700 text-white text-xs">
-                  SAIBA MAIS
+                  LEARN MORE
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Seção do Apple Watch */}
-        <div className="bg-black mt-44 rounded-2xl flex flex-col items-center z-10 pb-12 xl:flex-row xl:px-80">
-          <div className="flex flex-col items-center xl:items-start  2xl:px-16">
+        {/* Apple Watch Section */}
+        <div className="bg-black mt-44 lg:mt-60 rounded-2xl flex flex-col items-center z-10 pb-12 lg:flex-row lg:px-52">
+          <div className="flex flex-col items-center lg:items-start 2xl:px-16">
             <div className="mt-16">
-              <h1 className="text-white  text-xl">
-                O Poder do Apple <span className="text-[#4D5060] font-semibold">Watch</span>
+              <h1 className="text-white text-xl">
+                The Power of Apple <span className="text-blue-700 font-semibold">Watch</span>
               </h1>
             </div>
-            <div className="relative w-full max-w-[400px] h-[260px] mt-6 xl:hidden">
+            <div className="relative w-full max-w-[400px] h-[260px] mt-6 lg:hidden">
               <Image
                 src="/images/watchnv.png"
                 alt="apple-watch"
@@ -191,18 +193,18 @@ export default function Home() {
             </div>
 
             <div className="mt-4">
-              <p className="text-center text-gray-300 text-sm px-6 xl:text-start xl:px-0">
-                O MacBook Air M4 é o mais recente lançamento da Apple, com tela
-                Retina de 13,6", chip M4 e desempenho sem precedentes.
+              <p className="text-center text-gray-300 text-sm px-6 sm:px-14 max-w-lg  lg:text-start lg:px-0">
+                The MacBook Air M4 is Apple's latest release, featuring a 13.6" Retina display,
+                M4 chip, and unprecedented performance.
               </p>
             </div>
 
-            <button className="px-5 py-3 rounded-lg mt-6 text-white text-xs border-2">
-              SAIBA MAIS
+            <button className="px-5 py-3 rounded-lg mt-6 text-white text-xs bg-blue-700 border-2 border-blue-700">
+              LEARN MORE
             </button>
           </div>
 
-          <div className="relative w-full max-w-[400px] h-[500px] mt-6 hidden xl:flex">
+          <div className="relative w-full max-w-[400px] h-[500px] mt-6 hidden lg:flex">
             <Image
               src="/images/watchnv.png"
               alt="apple-watch"
@@ -213,24 +215,24 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Seção de modelos e personalizações para Apple Watch */}
+        {/* Apple Watch Models and Customization Section */}
         <div className="px-6">
-          <div className="flex flex-col justify-center items-center mt-44 ">
+          <div className="flex flex-col justify-center items-center mt-44">
             <div className="mb-2">
               <span className="text-2xl font-bold text-[#393636]">
-                Diversos <span className="text-[#AFC50E]">Modelos</span>
+                Various <span className="text-[#AFC50E]">Models</span>
               </span>
             </div>
             <div className="w-full flex items-center justify-center">
               <p className="text-center max-w-lg px-3 text-[#393636]">
-                Escolha a pulseira ideal e personalize seu Apple Watch Series 10
-                com o estilo perfeito para você!
+                Choose the perfect band and customize your Apple Watch Series 10
+                with the perfect style for you!
               </p>
             </div>
             <div className="relative w-full max-w-[300px] h-[320px] pt-8">
               <Image
                 src="/images/watchcorhd.png"
-                alt="apple-watch-cores"
+                alt="apple-watch-colors"
                 fill
                 className="object-contain"
                 quality={100}
@@ -238,14 +240,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Seção do iPad Pro */}
+          {/* iPad Pro Section */}
           <div className="mt-28 flex flex-col items-center">
             <div>
               <h2 className="text-2xl font-bold text-[#393636] text-center">
-                Explore o Novo IPad <span className="text-[#F33D7E]">Pro</span>
+                Explore the New iPad <span className="text-[#F33D7E]">Pro</span>
               </h2>
             </div>
-            <div className="flex flex-col items-center xl:flex-row xl:gap-44">
+            <div className="flex flex-col items-center lg:flex-row xl:gap-44">
               <div className="relative w-full max-w-[270px] h-[360px]">
                 <Image
                   src="/images/ipadrosa.png"
@@ -257,35 +259,35 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center gap-2">
                 <div className="mt-3">
-                  <h3 className="text-xl font-semibold  text-[#393636]">Ipad Pro</h3>
+                  <h3 className="text-xl font-semibold text-[#393636]">iPad Pro</h3>
                 </div>
 
                 <p className="text-[#393636] max-w-lg lg:max-w-2xl text-center">
-                  O iPad Pro 2024 possui chip M4, tela Ultra Retina XDR e design
-                  mais fino, ideal para produtividade e entretenimento.
+                  The 2024 iPad Pro features the M4 chip, Ultra Retina XDR display, and a
+                  thinner design, perfect for productivity and entertainment.
                 </p>
                 <button className="px-5 py-3 rounded-lg mt-6 bg-[#F33D7E] text-white text-xs">
-                  SAIBA MAIS
+                  LEARN MORE
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Seção de diversas cores para iPad */}
+          {/* iPad Color Options Section */}
           <div className="mt-44 flex flex-col justify-center items-center pb-52">
             <div className="mb-2">
               <span className="text-2xl font-bold text-[#393636]">
-                Diversas <span className="text-indigo-700">Cores</span>
+                Various <span className="text-blue-600">Colors</span>
               </span>
             </div>
-            <p className="text-center mb-6  text-[#393636]">
-              Escolha o iPad na cor perfeita para você e personalize sua
-              experiência!
+            <p className="text-center mb-6 text-[#393636]">
+              Choose the iPad in the perfect color for you and customize your
+              experience!
             </p>
             <div className="relative w-full max-w-[400px] h-[400px] pt-8">
               <Image
                 src="/images/ipadfundo.png"
-                alt="ipad-cores"
+                alt="ipad-colors"
                 fill
                 className="object-contain"
                 quality={100}
@@ -294,14 +296,14 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Rodapé com links sociais */}
+        {/* Footer with Social Links */}
         <footer className="w-full bg-black px-6 text-white pt-12 font-Kanit">
           <div className="flex flex-col gap-12 border-b-2 pb-6 border-gray-600">
             <div className="flex flex-col gap-2">
               <h1>SOCIAL</h1>
               <div className="flex gap-2">
                 <a
-                  href="https://api.whatsapp.com/send?phone=5592994916643&text=Ol%C3%A1,%20vim%20pelo%20portf%C3%B3lio!"
+                  href="https://api.whatsapp.com/send?phone=5592994916643&text=Hi,%20I%20came%20through%20the%20portfolio!"
                   target="_blank"
                 >
                   <Image
@@ -325,7 +327,7 @@ export default function Home() {
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/jos%C3%A9-gabriel-8901a7344/"
+                  href="https://www.linkedin.com/in/josé-gabriel-8901a7344/"
                   target="_blank"
                 >
                   <Image
@@ -351,7 +353,7 @@ export default function Home() {
             <div className="flex flex-col gap-6">
               <h1>JOSÉ GABRIEL</h1>
               <p className="text-xs text-gray-400">
-                Portfolio - Desenvolvedor Full Stack
+                Portfolio - Full Stack Developer
               </p>
             </div>
           </div>
