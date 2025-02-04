@@ -1,11 +1,12 @@
-export default function Teste() {
-    return(
-    <>
-    <div className="flex w-full h-screen justify-center items-center">
-        <div className="border-2 border-red-500 px-96 box-border"> {/* Adicionando box-border */}
-            <p>testandoooo.... testandoooo.... testandoooo.... testandoooo....</p>
-        </div>
+import React from 'react';
+import Questions from '../components/questions';
+
+const TestimonialsCarousel = () => {
+  return (
+    <div className="w-full px-16">
+        <Questions/>
     </div>
-    </>
-    )
-}
+  );
+};
+
+export default TestimonialsCarousel;
