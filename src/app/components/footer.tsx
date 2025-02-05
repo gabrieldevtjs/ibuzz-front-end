@@ -44,7 +44,7 @@ export function FooterHome() {
             </Footer.LinkGroup>
           </div>
         </div>
-        <div className="w-full bg-black border-t px-4 py-6 sm:flex sm:items-center sm:justify-between">
+        <div className="w-full bg-black  px-4 py-6 sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright href="#" by="Website developed by José Gabriel" year={2025} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" icon={BsFacebook} />

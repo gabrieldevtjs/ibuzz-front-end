@@ -113,7 +113,7 @@ export default function Home() {
                   src="/images/iphoneazulnv.avif"
                   alt="blue-iphone"
                   fill
-                  className="object-contain drop-shadow-2xl filter hover:brightness-110 transition-all duration-300"
+                  className="object-contain filter hover:brightness-110 transition-all duration-300"
                   quality={100}
                   priority
                 />
