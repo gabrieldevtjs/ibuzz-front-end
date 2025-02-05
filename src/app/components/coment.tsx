@@ -39,10 +39,10 @@ export default function Coments(){
   return (
     <div className="w-full max-w-6xl mx-auto ">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-900">
+        <h2 className="text-xl lg:text-3xl font-bold text-gray-900">
           What Our <span className="text-blue-600">Customers</span> Say
         </h2>
-        <p className="text-gray-600 mt-4">
+        <p className="text-gray-600 mt-4 text-sm lg:text-base">
           Read about experiences from our satisfied customers
         </p>
       </div>
@@ -60,7 +60,7 @@ export default function Coments(){
                       </span>
                     </div>
                     <div className="ml-4">
-                      <h3 className="font-semibold text-gray-900">{testimonial.name}</h3>
+                      <h3 className="font-semibold text-gray-900 text-sm">{testimonial.name}</h3>
                       <p className="text-sm text-gray-500">{testimonial.role}</p>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ export default function Coments(){
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-600 flex-grow">{testimonial.comment}</p>
+                  <p className="text-gray-600 flex-grow text-sm lg:text-base">{testimonial.comment}</p>
                 </div>
               </div>
             </CarouselItem>

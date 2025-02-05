@@ -20,7 +20,7 @@ export default function Home() {
       <div className="min-h-screen w-full font-poppins bg-gray-50">
         <div className="px-6">
           {/* Header */}
-          <div className="flex justify-between items-center pt-6 w-full lg:px-8  xl:px-20 2xl:px-36">
+          <div className="flex justify-between items-center pt-6 w-full lg:px-8  xl:px-16">
             <div className="flex gap-2 items-center">
               <Image
                 src="/icons/iconapple.png"
@@ -119,7 +119,7 @@ export default function Home() {
           )}
 
           {/* iPhone 16 Section */}
-          <div className="flex flex-col items-center gap-8 sm:mt-20 lg:flex-row-reverse lg:gap-40 lg:justify-center lg:mt-36 xl:mt-44">
+          <div className="flex flex-col items-center gap-8 sm:mt-20 lg:flex-row-reverse lg:gap-80 lg:justify-center lg:mt-36 xl:mt-44">
             <div className="relative w-full max-w-[250px] h-[400px] group">
               <div className="relative w-full h-full transition-transform duration-300 ease-in-out hover:scale-105">
                 <Image
@@ -160,7 +160,7 @@ export default function Home() {
               Customize your experience with the iPhone 16 in the perfect color
               for you!
             </p>
-            <div className="relative w-[300px] h-[270px] mt-8 lg:h-[300px] lg:w-[450px]">
+            <div className="relative w-[300px] h-[270px] mt-8 lg:h-[300px] lg:w-[400px]">
               <Image
                 src="/images/iphones.png"
                 alt="iphone-colors"
@@ -173,7 +173,7 @@ export default function Home() {
 
           {/* MacBook Air M4 Section */}
           <div className="mt-44 flex flex-col items-center lg:mt-60">
-            <h2 className="text-3xl font-bold text-gray-900 text-center mb-16">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 text-center mb-16">
               Limitless Innovation, Explore the New{" "}
               <span className="text-blue-600">MacBook!</span>
             </h2>
@@ -182,31 +182,33 @@ export default function Home() {
                 <Image
                   src="/images/mackbooknv.png"
                   alt="macbook"
-                  className="object-contain lg:w-[600px]"
+                  className="object-contain lg:w-[500px]"
                   quality={100}
                   width={400}
                   height={350}
                 />
               </div>
               <div className="w-auto flex flex-col items-center lg:items-start">
-                <h3 className="text-2xl font-bold text-gray-900">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900">
                   MacBook Air M4
                 </h3>
-                <p className="text-gray-600 text-center mt-4 max-w-xl lg:text-start">
+                <p className="text-gray-600 text-center mt-4 max-w-sm lg:text-start text-sm lg:text-lg">
                   The MacBook Air M4 is Apple's latest release, featuring a
                   13.6" Retina display, M4 chip, and unprecedented performance.
                 </p>
-                <button className="px-8 py-3 rounded-lg mt-6 bg-blue-700 text-white text-sm hover:bg-blue-800 transition-colors duration-300 transform hover:scale-105 shadow-lg">
+                <button className="px-8 py-3 rounded-lg mt-6 bg-blue-700 text-white text-xs lg:text-sm hover:bg-blue-800 transition-colors duration-300 transform hover:scale-105 shadow-lg">
                   LEARN MORE
                 </button>
               </div>
             </div>
           </div>
         </div>
+
+
         {/* Apple Watch Section */}
         <div className="bg-black mt-44 lg:mt-72 rounded-2xl flex flex-col items-center z-10 pb-12 lg:flex-row  lg:justify-center">
           <div className="flex flex-col items-center lg:items-start mt-16 lg:mt-0">
-            <h1 className="text-white text-3xl font-bold">
+            <h1 className="text-white text-2xl lg:text-3xl font-bold">
               The Power of Apple <span className="text-blue-700">Watch</span>
             </h1>
             <div className="relative w-full max-w-[400px] h-[260px] mt-6 lg:hidden">
@@ -218,15 +220,15 @@ export default function Home() {
                 quality={100}
               />
             </div>
-            <h2 className="text-2xl text-white mt-5">
+            <h2 className="text-xl lg:text-2xl text-white mt-5">
               Apple Watch Series{" "}
               <span className="text-blue-700 font-bold">10</span>
             </h2>
-            <p className="text-gray-300 text-center mt-4 max-w-lg lg:text-start">
+            <p className="text-gray-300 text-center mt-4 max-w-lg lg:text-start text-sm lg:text-base px-2 lg:px-0">
               The Apple Watch Series 10 features a sleek design, advanced health
               tracking, and seamless integration with your Apple devices.
             </p>
-            <button className="px-8 py-3 rounded-lg mt-6 text-white text-sm bg-blue-700 border-2 border-blue-700 hover:bg-blue-800 transition-colors duration-300 transform hover:scale-105 shadow-lg">
+            <button className="px-8 py-3 rounded-lg mt-6 text-white text-xs lg:text-sm bg-blue-700 border-2 border-blue-700 hover:bg-blue-800 transition-colors duration-300 transform hover:scale-105 shadow-lg">
               LEARN MORE
             </button>
           </div>
@@ -244,15 +246,15 @@ export default function Home() {
         {/* Apple Watch Models and Customization Section */}
         <div className="mt-44 flex flex-col items-center lg:mt-60">
           <div className="mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
               Various <span className="text-[#AFC50E]">Models</span>
             </h2>
           </div>
-          <p className="text-center max-w-lg text-gray-600">
+          <p className="text-center max-w-lg text-gray-600 text-sm lg:text-base px-2">
             Choose the perfect band and customize your Apple Watch Series 10
             with the perfect style for you!
           </p>
-          <div className="relative w-full max-w-[300px] h-[320px] mt-8">
+          <div className="relative  w-[300px] h-[320px] mt-8 lg:w-[370px]">
             <Image
               src="/images/watchcorhd.png"
               alt="apple-watch-colors"
@@ -266,7 +268,7 @@ export default function Home() {
         {/* iPad Pro Section */}
         <div className="mt-44 flex flex-col items-center lg:mt-60">
           <div className="mb-6 xl:mb-20 2xl:mb-24">
-            <h2 className="text-3xl font-bold text-gray-900 text-center">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 text-center">
               Explore the New iPad <span className="text-[#F33D7E]">Pro</span>
             </h2>
           </div>
@@ -281,13 +283,13 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col items-center lg:items-start mt-6 lg:mt-0">
-              <h3 className="text-2xl font-bold text-gray-900">iPad Pro</h3>
-              <p className="text-gray-600 text-center mt-4 max-w-xs lg:text-start">
+              <h3 className="text-xl lg:text-2xl font-bold text-gray-900">iPad Pro</h3>
+              <p className="text-gray-600 text-center mt-4 max-w-xs lg:text-start text-sm lg:text-base">
                 The 2024 iPad Pro features the M4 chip, Ultra Retina XDR
                 display, and a thinner design, perfect for productivity and
                 entertainment.
               </p>
-              <button className="px-8 py-3 rounded-lg mt-6 bg-[#F33D7E] text-white text-sm hover:bg-[#D42A5E] transition-colors duration-300 transform hover:scale-105 shadow-lg">
+              <button className="px-8 py-3 rounded-lg mt-6 bg-[#F33D7E] text-white text-xs lg:text-sm hover:bg-[#D42A5E] transition-colors duration-300 transform hover:scale-105 shadow-lg">
                 LEARN MORE
               </button>
             </div>
@@ -297,15 +299,15 @@ export default function Home() {
         {/* iPad Color Options Section */}
         <div className="mt-44 flex flex-col items-center pb-52">
           <div className="mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
               Various <span className="text-blue-600">Colors</span>
             </h2>
           </div>
-          <p className="text-center max-w-lg text-gray-600">
+          <p className="text-center max-w-lg text-gray-600 text-sm lg:text-base px-2">
             Choose the iPad in the perfect color for you and customize your
             experience!
           </p>
-          <div className="relative w-full max-w-[400px] h-[400px] mt-8">
+          <div className="relative w-full max-w-[400px] h-[300px] mt-8 lg:h-[400px]">
             <Image
               src="/images/ipadfundo.png"
               alt="ipad-colors"
