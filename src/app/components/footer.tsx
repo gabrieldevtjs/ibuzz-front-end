@@ -7,7 +7,7 @@ export function FooterHome() {
   return (
     <Footer bgDark>
       <div className="w-full">
-        <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4 bg-black">
+        <div className="w-full flex justify-between items-center flex-row flex-wrap gap-8 px-6 py-8  bg-black">
           <div>
             <Footer.Title title="Company" />
             <Footer.LinkGroup col>
@@ -35,7 +35,7 @@ export function FooterHome() {
             </Footer.LinkGroup>
           </div>
           <div>
-            <Footer.Title title="download" />
+            <Footer.Title title="download" className="pr-6"/>
             <Footer.LinkGroup col>
               <Footer.Link href="#">iOS</Footer.Link>
               <Footer.Link href="#">Android</Footer.Link>
