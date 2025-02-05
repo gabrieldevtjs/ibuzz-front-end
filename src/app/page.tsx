@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Coments from "./components/coment"
 import Questions from "./components/questions";
+import { FooterHome } from "./components/footer";
 
 
 
@@ -325,57 +326,9 @@ export default function Home() {
       
 
         {/* Footer */}
-        <footer className="w-full bg-black px-6 text-white pt-12 font-poppins mt-44">
-          <div className="flex flex-col gap-12 border-b-2 pb-6 border-gray-600">
-            <div className="flex flex-col gap-2">
-              <h1 className="text-lg font-bold">SOCIAL</h1>
-              <div className="flex gap-4">
-                <a href="#" target="_blank">
-                  <Image
-                    src="/iconswhite/zapbranco.svg"
-                    alt="WhatsApp"
-                    width={24}
-                    height={24}
-                    className="hover:opacity-80 transition-opacity duration-300"
-                  />
-                </a>
-                <a href="#" target="_blank">
-                  <Image
-                    src="/iconswhite/instabanco.svg"
-                    alt="Instagram"
-                    width={24}
-                    height={24}
-                    className="hover:opacity-80 transition-opacity duration-300"
-                  />
-                </a>
-                <a href="#" target="_blank">
-                  <Image
-                    src="/iconswhite/linkbranco.svg"
-                    alt="LinkedIn"
-                    width={24}
-                    height={24}
-                    className="hover:opacity-80 transition-opacity duration-300"
-                  />
-                </a>
-                <a href="#" target="_blank">
-                  <Image
-                    src="/iconswhite/gitbranco.svg"
-                    alt="GitHub"
-                    width={24}
-                    height={24}
-                    className="hover:opacity-80 transition-opacity duration-300"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="flex flex-col gap-6">
-              <h1 className="text-lg font-bold">JOSÉ GABRIEL</h1>
-              <p className="text-xs text-gray-400">
-                Portfolio - Full Stack Developer
-              </p>
-            </div>
+        <div className="mt-44">
+          <FooterHome/>
           </div>
-        </footer>
       </div>
     </>
   );
